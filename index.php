@@ -1,34 +1,6 @@
 <?php
-include_once("config.php");
+include_once("dbcon.php");
     session_start();
-
-    
-    if($mysqli===false)
-    {
-        echo "error";
-    }
-    if($_SERVER["REQUEST_METHOD"]=="POST")
-	{
-		$username = $_POST["username"];
-		$password = $_POST["password"];
-
-        $sql = "select * from users where username = '".$username."' AND password = '".$password."'";
-		$result = mysqli_query($mysqli, $sql);
-        
-        $row = mysqli_fetch_array($result);
-
-        if($row['usertype'] == 'registrar') 
-        {
-            $_SESSION['username'] = $row['id'];
-            header('location: registrar.php');
-        }
-        elseif($row['usertype'] == 'mis') 
-        {
-            $_SESSION['username'] = $row['id'];
-            header('location: mis.php');
-        }
-    
-}
 ?>
 <!DOCTYPE html>
 <html>
