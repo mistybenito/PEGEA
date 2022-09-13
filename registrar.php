@@ -76,7 +76,7 @@
                                                     <td> <?= $row['Email'];?> </td>
                                                     <td> <?= $row['Course'];?> </td>
                                                     <td>
-                                                        <a href="edit-contact.php" btn btn-sml> Files </a>
+                                                        <a href="stprofile.php" class = "btn btn btn-primary"> Files </a>
                                                     </td>
                                                      </tr>
 
@@ -87,7 +87,7 @@
                                         {
                                             ?>
                                             <tr>
-                                                <td colspan="5"> No Record Found</td>
+                                                <td colspan="5"> No Record Found </td>
                                             </tr>
                                             <?php
                                         }
