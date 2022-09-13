@@ -76,7 +76,7 @@
                                                     <td> <?= $row['Email'];?> </td>
                                                     <td> <?= $row['Course'];?> </td>
                                                     <td>
-                                                        <a href="stprofile.php" class = "btn btn btn-primary"> Files </a>
+                                                        <a href="stprofile.php?id=<?=$key?>" class = "btn btn btn-primary"> Files </a>
                                                     </td>
                                                      </tr>
 
