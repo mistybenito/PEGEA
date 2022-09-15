@@ -4,26 +4,24 @@
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Student Profile</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stprofile.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <h1>Student Profile</h1>
+    <head>
+        <title>Curriculum</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="curriculum.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="nav">
+            <p><a href="logout.php?" style="float: left; margin-left: 50px; color: white;">Logout</a></p>	
+            <center><p class="title">Pre-Enrollment and Grade Evaluation</p></center>
+        </div>
+        <div id="id01" class="modal">    
+        <form class="modal-content animate"  action="#" method="POST">                   
+            <h1>Student Profile</h1>
     <div id="div1">
-	<?php
-	include('dbcon.php');
-	if(isset($_GET['id']))
-	{
-		$key_child = $_GET['id'];
-		$ref_table = 'User';
-		$getdata = $database->getReference($ref_table)->getChild($key_child)->getValue();
-		if($getdata > 0)
-		{
-			?>
-	<form name="form1" method="post" action="code.php"  style="height:450px;">
+	
+	<form name="form1" method="post" action="code.php"  style="height:500px;">
 		<table>
 		<input type="hidden" name = "key" value = "<?=$key_child;?>">
         <tr> 
@@ -64,23 +62,10 @@
 		</tr>
 		</table> 
         <center><button type="submit" name="update_registrar" id="update" value="Update"> Update </center>
+		<center><button type></center>
 	</form>
-	<?php
-		}
-		else
-		{
-			$_SESSION['status'] = "No record found.";
-			header('Location: registrar1.php');
-			exit();
-		}
-	}
-	else
-		{
-			$_SESSION['status'] = "Not found.";
-			header('Location: registrar1.php');
-			exit();
-		}
-	?>
 </div>
-</body>
+            </form>
+        </div>
+    </body>
 </html>

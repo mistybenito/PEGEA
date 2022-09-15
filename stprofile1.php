@@ -22,8 +22,8 @@
 		$getdata = $database->getReference($ref_table)->getChild($key_child)->getValue();
 		if($getdata > 0)
 		{
-			?>
-	<form name="form1" method="post" action="code.php"  style="height:450px;">
+	?>
+	<form name="form1" method="post" action="code.php"  style="height:500px;">
 		<table>
 		<input type="hidden" name = "key" value = "<?=$key_child;?>">
         <tr> 
@@ -64,6 +64,7 @@
 		</tr>
 		</table> 
         <center><button type="submit" name="update_registrar" id="update" value="Update"> Update </center>
+		<center><button type></center>
 	</form>
 	<?php
 		}

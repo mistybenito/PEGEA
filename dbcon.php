@@ -9,6 +9,5 @@ $factory = (new Factory)
     ->withDatabaseUri('https://ccc-pegea-default-rtdb.firebaseio.com/');
 
     $database = $factory->createDatabase();
-    $auth = $factory->createAuth();
   
 ?>

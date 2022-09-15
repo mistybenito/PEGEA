@@ -1,0 +1,33 @@
+<style>
+    .cards 
+    {
+        display: flex;
+/* Put a card in the next row when previous cards take all width */
+          flex-wrap: wrap;
+        max-width: fit-content;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .cards__item 
+    {
+    /* There will be 4 cards per row */
+        flex-basis: 25%;
+        background-color: aquamarine;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin: 5px;
+        border-radius: 15px;
+        text-align: center;
+        text-decoration: none;
+    }
+</style>
+<div class="cards">
+    <!-- A card with given width -->
+    <a href="" class="cards__item"><p>BSED-ENG</p></a>
+    <a href="" class="cards__item"><p>BSED-SCI</p></a>
+    <a href="" class="cards__item"><p>BSED MATH</p></a>
+    <a href="" class="cards__item"><p>BSED-fil</p></a>
+    <a href="" class="cards__item"><p>BSED-ep</p></a>
+    
+</div>
