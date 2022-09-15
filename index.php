@@ -37,7 +37,7 @@ include_once("dbcon.php");
         </div>
         <div id="id01" class="modal">    
 
-            <form class="modal-content animate"  action="#" method="POST">          
+            <form class="modal-content animate"  action="logincode.php" method="POST">          
              
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -50,7 +50,7 @@ include_once("dbcon.php");
               <div class="container">
                <div>
                    <label>Username:</label>
-                   <input type="text" name="username" required>
+                   <input type="text" name="email" required>
                </div>
                <div>
                    <lable>Password:</label>
@@ -60,7 +60,7 @@ include_once("dbcon.php");
                
                <center>
                 <div style="padding: 10px;">
-                    <input type="submit" value="Log in" class="button">
+                    <input type="submit" name = "login_button" class="button">
                 </div>
                </center>
              </div>

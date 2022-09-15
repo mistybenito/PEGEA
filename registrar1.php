@@ -10,7 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="registrar1.css" rel="stylesheet" type="text/css">
     </head>
-
  <body>
     <div class="nav">
 	    <p><a href="logout.php?" style="float: left; margin-left: 50px; color: white;">Logout</a></p>	
@@ -92,15 +91,10 @@
     <?php
         }
  ?>
-</tbody>
-   
+</tbody> 
 </table>
-              
-                
                </center>
-             
             </form>
         </div>
-         
    </body>
 </html>

@@ -48,24 +48,32 @@ else
 
 if(isset($_POST['register_btn']))
 {
-    $fullname = $_POST['full_name'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $key = $_POST['key'];
+    $fullname = $_POST['Name'];
+    $phone = $_POST['Contact_number'];
+    $address = $_POST['Address'];
+    $birthdate = $_POST['Birthday'];
+    $mother = $_POST['Mother'];
+    $mcon = $_POST['Mother_number'];
+    $father = $_POST['Father'];
+    $fcon = $_POST['Father_number'];
 
-    $userProperties = [
-        'email' => $email,
-        'emailVerified' => false,
-        'phoneNumber' => '+63'.$phone,
-        'password' => $password,
-        'displayName' => $fullname,
+    $updateData = [
+        'Name' =>$fullname,
+        'Contact_number'=> $phone,
+        'Address'=> $address,
+        'Birthday'=> $birthdate,
+        'Mother'=> $mother,
+        'Mother_number'=> $mcon,
+        'Father'=> $father,
+        'Father_number'=> $fcon,
     ];
     $createdUser = $auth->createUser($userProperties);
 
     if($createdUser)
     {
         $_SESSION['status'] = "User created successfully.";
-        header('Location: register.php');
+        header('Location: registrar1.php');
         exit();
     }
 }
