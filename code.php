@@ -48,7 +48,6 @@ else
 
 if(isset($_POST['register_btn']))
 {
-    $key = $_POST['key'];
     $fullname = $_POST['Name'];
     $phone = $_POST['Contact_number'];
     $address = $_POST['Address'];
@@ -57,18 +56,18 @@ if(isset($_POST['register_btn']))
     $mcon = $_POST['Mother_number'];
     $father = $_POST['Father'];
     $fcon = $_POST['Father_number'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-    $updateData = [
-        'Name' =>$fullname,
-        'Contact_number'=> $phone,
-        'Address'=> $address,
-        'Birthday'=> $birthdate,
-        'Mother'=> $mother,
-        'Mother_number'=> $mcon,
-        'Father'=> $father,
-        'Father_number'=> $fcon,
+    $userProperties = [
+        'email' => $email,
+        'emailVerified' => false,
+        'password' => $password,
     ];
+
     $createdUser = $auth->createUser($userProperties);
+    $ref_table = "contacts";
+    $postRef_result = $database->getReference($ref_table)->push($userProperties);
 
     if($createdUser)
     {
