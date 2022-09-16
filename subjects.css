@@ -22,10 +22,10 @@ h1
 }
 #div1
 {
-    width: fit-content;
     display: block;
     height: max-content;
     margin: auto;
+    width: fit-content;
     border-radius: 25px;
     padding: 20px;
     background-color: white;
@@ -44,43 +44,23 @@ h1
 }
 table
 {
-    border: 0px;
-    border-collapse: collapse;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-top: 13px;
-}
-th
-{
-	border-bottom: 2px solid white;
-	background-color:#214198;
-    color: white;
-	padding: 10px;
-}
-td 
-{
-    border-bottom: 2px solid white;
-    padding: 8px;
-}
-tr
-{
-    padding: 10px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+	margin-left: 20px;
+    margin-right: 20px;
 }
 #update
 {
+    
     background-color: #214198;
     border: none;
     border-radius:20px;
     color: white;
     padding: 10px 25px;
-    font-size: 18px;
+    font-size: 14px;
     cursor: pointer;
-    margin-top: 25px;
 }
-input[type=text], input[type=date], input[type=tel]
+input[type=text], input[type=tel]
 {
-  	width: 250px;
+  	width: 350px;
  	padding: 12px 20px;
  	margin: 8px 0;
  	display: inline-block;

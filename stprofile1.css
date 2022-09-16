@@ -23,12 +23,13 @@ h1
 #div1
 {
     display: block;
-    margin:auto;
-    width: 500px;
-    border-radius:25px;
+    height: 400px;
+    margin: auto;
+    width: 485px;
+    border-radius: 25px;
     padding: 20px;
-    background-color:white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 1);
 }
 /* hide scrollbar but allow scrolling */
 #div1 

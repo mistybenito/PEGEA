@@ -54,35 +54,30 @@ body
     margin: 0;
 	padding: 0;
 }
-.logo
+#logo
 {
-    display: inline-block;
+    height: 350px;
+    width: 400px;
 }
 div.div1
 {
-    margin-top: -38%;
-    margin-left:50%;
-    overflow: hidden;
+    float: left;
+    width: 450px;
+    padding-left: 10%;
 }
 div.div2
 {   
-    height: 450px;
-    margin-top: 9%;
-    background-color: white;
-    width: 50%;
-    border-radius: 25px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    margin-top: 10%;
 }
 .container
 {
-    position: relative;
-    display: block;
-    padding-top: 30px;
+    padding: 25px;
     width: 35%;
-    margin-right: 50%;
+    margin-left: 50%;
     overflow: hidden;
     border-radius: 25px;
-    text-align: -webkit-left;
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
 }
 .nav
 {
@@ -97,7 +92,7 @@ div.div2
 }
 input[type=text], input[type=password] 
 {
-    width: -webkit-fill-available;
+    width: 80%;
     padding: 12px 12px;
     margin: 8px 0;
     border: 1px solid #ccc;
@@ -111,7 +106,7 @@ input[type=text], input[type=password]
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: -webkit-fill-available;
+    width: 30%;
     border-radius: 20px;
     letter-spacing: 6px;
 }
@@ -121,7 +116,7 @@ input[type=text], input[type=password]
 }
 .forgot
 {
-   
+    margin-left: 50%;
     text-decoration: none;
     color: #e03434;
 }
@@ -137,16 +132,18 @@ img.avatar
 }
 
  
-</style>
+        </style>
     </head>
 
  <body>
     <div class="nav">
         <p style="color: #ffffff; text-align: center; font-weight: bold;" >Pre-Enrollment and Grade Evaluation</p>
     </div>
-<center>
+    <div class="div1">
+        <img src="images/logo.png" id="logo">
+    </div>
     <div class="div2">
-    
+        
         <form class="container"  action="#" method="POST">
             <div class="imgcontainer">                        
              <img src="images/admin.png" alt="Admin" class="avatar">
@@ -159,21 +156,15 @@ img.avatar
             <label>Password:</label>
             <input type="password" name="password" required>
             <br>
-            <input type="checkbox"id="rememberMe"><label for="rememberMe">Remember me</label>
-            
-            
+            <input type="checkbox"id="rememberMe"><label for="rememberMe">Remember me <a href="#" class="forgot">Forgot password?</a></label>
             <div style="padding: 10px; text-align: center;">
-                <input type="submit" value="Login" class="button">
-                <br><br>
-                <a href="#" class="forgot">Forgot password?</a>
-            </div>   
+                    <input type="submit" value="Login" class="button">
+                </div>   
         </div>
         </form>
-            <div class="div1">
-                <img src="images/ccc.png" alt="logo" class="logo">
-            </div>
+        
     </div>
-</center>
+        
          
    </body>
 </html>
