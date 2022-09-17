@@ -51,10 +51,10 @@
 			<th>Pre-Requisite</th>
 		</tr>
 		<tr>
-			<td><input type="text" name="course-code" class ="code" value = "" ></td>
-			<td><input type="text" name="title"  class="title" value = "" ></td>
-			<td><input type="text" name="unit" class="unit" value = "" ></td>
-			<td><input type="text" name="pre-req" class="pre-req" value = "" ></td>
+			<td><input type="text" name="course-code" class ="code"></td>
+			<td><input type="text" name="title"  class="title"></td>
+			<td><input type="text" name="unit" class="unit" ></td>
+			<td><input type="text" name="pre-req" class="pre-req"></td>
 		</tr>
 		<tr>
 			<td><input type="text" name="course-code" class ="code" value = "" ></td>

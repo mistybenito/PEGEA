@@ -23,24 +23,23 @@
 		
 		<tr> 
 			<td>Course Code</td>
-			<td><input type="text" name="course-code" value = " " ></td>
+			<td><input type="text" name = "Course_Code" ></td>
 		</tr>
 		<tr> 
 			<td>Descriptive Title</td>
-			<td><input type="text" name="title" value = " " ></td>
+			<td><input type="text" name = "Desc_title" ></td>
 		</tr>
         <tr> 
 			<td>Unit</td>
-			<td><input type="text" name="unit" value = "" ></td>
+			<td><input type="text" name = "Unit" ></td>
 		</tr>
 		<tr> 
 			<td>Pre-Requisite</td>
-			<td><input type="text" name="pre-req" value = ""></td>
+			<td><input type="text" name=  "Pre-Req"></td>
 		</tr>
 		</table> 
 	</form>
+	<center><button type="submit" name="add_subject" id="update"  value = "add_subject"> Add Subject </button></center></div>
 </fieldset>
-
-<center><button type="submit" name="update_registrar" id="update" value="Update"> Add Subject </center></div>
 </body>
 </html>

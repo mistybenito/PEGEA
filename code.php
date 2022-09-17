@@ -1,7 +1,42 @@
 <?php
-
+session_start();
 include('dbcon.php');
+
+// ADD SUBJECT CODE
+
+if (isset($_POST['add_subject']))
+{
+    $ccode= $_POST['Course_Code'];
+    $desc= $_POST['Desc_title'];
+    $unit= $_POST['Unit'];
+    $prereq= $_POST['Pre-Req'];
+
+    $addData = [
+        'Course_Code' => $ccode,
+        'Desc_title' => $desc,
+        'Unit' => $unit,    
+        'Pre-Req'=> $prereq,
+    ];
+
+    $ref_table = "Subjects";
+
+    $addData_result = $database->getReference($ref_table)->push($addData);
+
+    if($addData_result)
+    {
+        $_SESSION['status'] = "Subject Added Successfully";
+        header('Location: curriculum.php');
+    }
+    else
+    {
+        $_SESSION['status'] = "Subject not addded";
+        header('Location: curriculum.php');
+    }
+}
+
 // UPDATE CODE
+
+
 if(isset($_POST['update_registrar']))
 {
     $key = $_POST['key'];
