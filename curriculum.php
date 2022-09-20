@@ -43,74 +43,42 @@
 			</select>		   
 <center>
 	<table>
-		
 		<tr> 
 			<th>Course Code</th>
 			<th>Discriptive Title</th>
 			<th>Unit</th>
 			<th>Pre-Requisite</th>
 		</tr>
-		<tr>
-			<td><input type="text" name="course-code" class ="code"></td>
-			<td><input type="text" name="title"  class="title"></td>
-			<td><input type="text" name="unit" class="unit" ></td>
-			<td><input type="text" name="pre-req" class="pre-req"></td>
-		</tr>
-		<tr>
-			<td><input type="text" name="course-code" class ="code" value = "" ></td>
-			<td><input type="text" name="title"  class="title" value = "" ></td>
-			<td><input type="text" name="unit" class="unit" value = "" ></td>
-			<td><input type="text" name="pre-req" class="pre-req" value = "" ></td>
-		</tr>
-		<tr>
-			<td><input type="text" name="course-code" class ="code" value = "" ></td>
-			<td><input type="text" name="title"  class="title" value = "" ></td>
-			<td><input type="text" name="unit" class="unit" value = "" ></td>
-			<td><input type="text" name="pre-req" class="pre-req" value = "" ></td>
-		</tr>
-		<tr>
-			<td><input type="text" name="course-code" class ="code" value = "" ></td>
-			<td><input type="text" name="title"  class="title" value = "" ></td>
-			<td><input type="text" name="unit" class="unit" value = "" ></td>
-			<td><input type="text" name="pre-req" class="pre-req" value = "" ></td>
-		</tr>
-		<tr>
-			<td><input type="text" name="course-code" class ="code" value = "" ></td>
-			<td><input type="text" name="title"  class="title" value = "" ></td>
-			<td><input type="text" name="unit" class="unit" value = "" ></td>
-			<td><input type="text" name="pre-req" class="pre-req" value = "" ></td>
-		</tr>
-		<tr>
-			<td><input type="text" name="course-code" class ="code" value = "" ></td>
-			<td><input type="text" name="title"  class="title" value = "" ></td>
-			<td><input type="text" name="unit" class="unit" value = "" ></td>
-			<td><input type="text" name="pre-req" class="pre-req" value = "" ></td>
-		</tr>
-		<tr>
-			<td><input type="text" name="course-code" class ="code" value = "" ></td>
-			<td><input type="text" name="title"  class="title" value = "" ></td>
-			<td><input type="text" name="unit" class="unit" value = "" ></td>
-			<td><input type="text" name="pre-req" class="pre-req" value = "" ></td>
-		</tr>
-		<tr>
-			<td><input type="text" name="course-code" class ="code" value = "" ></td>
-			<td><input type="text" name="title"  class="title" value = "" ></td>
-			<td><input type="text" name="unit" class="unit" value = "" ></td>
-			<td><input type="text" name="pre-req" class="pre-req" value = "" ></td>
-		</tr>
-		<tr>
-			<td><input type="text" name="course-code" class ="code" value = "" ></td>
-			<td><input type="text" name="title"  class="title" value = "" ></td>
-			<td><input type="text" name="unit" class="unit" value = "" ></td>
-			<td><input type="text" name="pre-req" class="pre-req" value = "" ></td>
-		</tr>
-		<tr>
-			<td><input type="text" name="course-code" class ="code" value = "" ></td>
-			<td><input type="text" name="title"  class="title" value = "" ></td>
-			<td><input type="text" name="unit" class="unit" value = "" ></td>
-			<td><input type="text" name="pre-req" class="pre-req" value = "" ></td>
-		</tr>
-		
+
+			<?php
+			include('dbcon.php');
+			$ref_table = "Subjects";
+
+			$fetchdata = $database->getReference($ref_table)->getValue();
+			if($fetchdata > 0 )
+			{
+				$i = 0;
+				foreach($fetchdata as $key => $row)
+				{
+					?>
+					<tr>
+						<td><?=$row['Course_Code']; ?></td>
+						<td><?=$row['Desc_title']; ?></td>
+						<td><?=$row['Unit']; ?></td>
+						<td><?=$row['Pre-Req']; ?></td>
+						
+					</tr>
+
+					<?php
+				}
+			}
+			else
+			{
+				?>
+				<td colspan = "4"> No Record found </td> 
+				<?php
+			}
+			?>
 		</table> 
 </center>
 	</form>
