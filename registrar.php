@@ -113,7 +113,7 @@
         <a href="BSED-MATH.php" class="cards__course"><p>BSED MATH</p><img src="images/curriculum.png" alt="bsed-math" class="course-avtr"></a>
         <a href="BSED-ENG.php" class="cards__course"><p>BSED-ENG</p><img src="images/curriculum.png" alt="bsed-eng" class="course-avtr"></a>
         <a href="BEED.php" class="cards__course"><p>BEED</p><img src="images/curriculum.png" alt="beed" class="course-avtr"></a>
-        <a href="BSCS.php" class="cards__course"><p>BSCS</p><img src="images/curriculum.png" alt="bscs" class="course-avtr"></a>
+        <a href="BSCS_1y_1s.php" class="cards__course"><p>BSCS</p><img src="images/curriculum.png" alt="bscs" class="course-avtr"></a>
         <a href="BSBA" class="cards__course"><p>BSBA</p><img src="images/curriculum.png" alt="bsba" class="course-avtr"></a>
         <a href="BSOA" class="cards__course"><p>BSOA</p><img src="images/curriculum.png" alt="bsoa" class="course-avtr"></a>
         

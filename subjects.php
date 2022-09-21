@@ -39,7 +39,7 @@
 		</tr>
 		</table> 
 	</form>
-	<center><button type="submit" name="add_subject" id="update"  value = "add_subject"> Add Subject </button></center></div>
+	<center><button type="submit" name="add_subject_bscs_1y_1s" id="update"  value = "add_subject"> Add Subject </button></center></div>
 </fieldset>
 </body>
 </html>

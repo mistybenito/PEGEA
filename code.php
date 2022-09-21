@@ -2,9 +2,9 @@
 session_start();
 include('dbcon.php');
 
-// ADD SUBJECT CODE
+// ADD SUBJECT CODE BSCS 1ST SEM 1ST YEAR
 
-if (isset($_POST['add_subject']))
+if (isset($_POST['add_subject_bscs_1y_1s']))
 {
     $ccode= $_POST['Course_Code'];
     $desc= $_POST['Desc_title'];
@@ -18,19 +18,19 @@ if (isset($_POST['add_subject']))
         'Pre-Req'=> $prereq,
     ];
 
-    $ref_table = "Course&Curriculum/Bachelor of Education in English/First Year/1st Sem";
+    $ref_table = "Course&Curriculum/Bachelor of Science in Computer Science/First Year/1st Sem";
 
     $addData_result = $database->getReference($ref_table)->push($addData);
 
     if($addData_result)
     {
         $_SESSION['status'] = "Subject Added Successfully";
-        header('Location: curriculum.php');
+        header('Location: BSCS.php');
     }
     else
     {
         $_SESSION['status'] = "Subject not addded";
-        header('Location: curriculum.php');
+        header('Location: BSCS_1y_1s.php');
     }
 }
 
