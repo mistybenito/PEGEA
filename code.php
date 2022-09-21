@@ -18,7 +18,7 @@ if (isset($_POST['add_subject']))
         'Pre-Req'=> $prereq,
     ];
 
-    $ref_table = "Subjects";
+    $ref_table = "Course&Curriculum/Bachelor of Education in English/First Year/1st Sem";
 
     $addData_result = $database->getReference($ref_table)->push($addData);
 
